@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="menu">
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div class="menu-buttons">
+          <div class="button">
+            <img src="images/icon-document.svg" alt="">
+          </div>
+          <div class="button">
+            <img src="images/icon-folder.svg" alt="">
+          </div>
+          <div class="button">
+            <img src="images/icon-upload.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="status">
+        <div class="storage-used">
+          You’ve used <strong>815 GB</strong> of your storage
+        </div>
+        <div class="storage-meter">
+          <div class="storage-bar">
+            <div class="storage-progress"></div>
+          </div>
+          <div class="storage-minmax">
+            <div class="min-storage">
+              0 GB
+            </div>
+            <div class="max-storage">
+              1000 GB
+            </div>
+          </div>
+        </div>
+        <div class="storage-left-container">
+          <div class="storage-left">
+            <span class="storage-left-count">185</span><span class="storage-left-text">GB Left</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+    <span>Coded by <a href="http://github.com/kristiandrex" target="_blank">@kristiandrex</a>.</span>
+  </div>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      const storageProgress = document.querySelector('.storage-progress');
+      storageProgress.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
